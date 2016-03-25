@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+<SearchView
+    android:id="@+id/search_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0F0" />
+<com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:text="Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="30sp"/>
+<ListView
+android:id="@+id/list_view"
+android:layout_width="match_parent"
+android:layout_height="0dip"
+android:layout_weight="1" />
+<com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv2"
+        android:text="Pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="30sp"/>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:id="@+id/list_view_picture"
+    />
+<!--<Button
+    android:id="@+id/back_to_main"
+    android:text="cancel"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+/> -->
+<info.hoang8f.widget.FButton
+    android:id="@+id/back_to_main"
+    fbutton:buttonColor="@color/fbutton_color_peter_river"
+    fbutton:shadowColor="@color/fbutton_color_belize_hole"
+    fbutton:shadowEnabled="true"
+    fbutton:shadowHeight="5dp"
+    fbutton:cornerRadius="5dp"
+    android:text="   GO Back   "
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    />
+</LinearLayout>

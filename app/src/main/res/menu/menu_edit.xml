@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.chenchaohao.inote.EditActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/EditActivity_Cancel" android:title="@string/EditActivityCancel"
+        android:icon="@drawable/ic_action_cancel" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/EditActivity_Accept" android:title="@string/EditActivityAccept"
+        android:icon="@drawable/ic_action_accept" app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.example.chenchaohao.inote"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':TessLibrary:tess-two')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.ikimuhendis:ldrawer:0.1'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.github.florent37:materialtextfield:1.0.1@aar'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'info.hoang8f:fbutton:1.0.5'
+}

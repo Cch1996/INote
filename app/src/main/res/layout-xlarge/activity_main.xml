@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <Toolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar">
+        
+        </Toolbar>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/take"
+        android:text="@string/TAKE_PICTURE"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveToDB"
+        android:text="@string/SEARCH"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/readdata"
+
+        android:text="@string/READ"
+        />
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/buttonflat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:layout_centerInParent="true"
+        android:text="Button" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView" />
+
+    <ImageView
+            android:contentDescription="@string/PICTURE"
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+    />
+ </DrawerLayout>
+</RelativeLayout>
+
